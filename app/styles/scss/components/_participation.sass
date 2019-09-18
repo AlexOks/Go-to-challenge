@@ -2,14 +2,35 @@
     width: 100%
     height: 675px
     background-color: $blue
+    +r(768)
+        height: 510px
+    +r(699)
+        height: 470px
+    +r(599)
+        height: 100%
     &_about
         width: 100%
         max-width: 678px
         margin-left: 10%
         padding-top: 40px
         font-size: 14px
+        +r(768)
+            max-width: 599px
+            padding-top: 30px
+        +r(699)
+            width: 100%
+            max-width: 499px
+            padding-top: 20px
+        +r(499)
+            margin-left 5px
     &_process
         margin-top: 100px
+        margin-bottom: 126px
+        +r(768)
+            margin-top: 35px
+            margin-bottom: 35px
+        +r(599)
+            margin-bottom: 55px
         &:after
             content: ''
             position: absolute
@@ -21,11 +42,26 @@
             width: 100%
             background: $lightBlue
             z-index: 1
+            +r(768)
+                top: 255px
+            +r(699)
+                top: 246px
+            +r(599)
+                display: none
         &_list
+            +r(599)
+                flex-wrap: wrap
             &_item
                 width: 228px
                 height: 260px
                 position: relative
+                +r(1024)
+                    width: 180px
+                +r(699)
+                    width: 145px
+                    height: 222px
+                +r(599)
+                        width: 100%
                 &_card
                     display: none
                     width: 228px
@@ -36,11 +72,27 @@
                     position: absolute
                     top: 1px
                     z-index: 10
+                    +r(1024)
+                        width: 180px
+                    +r(699)
+                        width: 145px
+                        padding: 10px
+                        height: 220px
+                    +r(599)
+                        width: 200px
+                        height: 237px
+                        padding: 22px 14px 14px
+                        left: 50%
+                        margin-left: -100px
                     h4
                         line-height: 20px
+                        +r(768)
+                            font-size: 14px
+                            line-height: 16px
                     img
                         margin: 20px auto
                         display: block
+                        width: 100%
                     p
                         font-size: 12px
                         text-align: center
@@ -76,3 +128,13 @@
                 display: block
                 margin: 0 auto
                 margin-top: 146px
+                +r(768)
+                    line-height: 16px
+                    font-size: 14px
+    &_advice
+        justify-content: center
+        align-items: center
+        +r(599)
+            padding-bottom: 15px
+        img
+            margin: 0 10px

@@ -1,0 +1,138 @@
+.s_offer
+    &_wrapper
+        max-width: 830px
+        margin: 0 auto
+        h1
+            margin-top: 82px
+            color: #1c8ece
+            +r(768)
+                margin-top: 35px
+        p
+            margin-top: 30px
+            color: $darkBlue
+            text-align: center
+            +r(768)
+                margin-top: 15px
+                margin-bottom: 15px
+    &_description
+        margin-top: 90px
+        +r(768)
+            flex-direction: column
+            margin-top: 35px
+        &_item
+            height: 278px
+            width: 33%
+            position: relative
+            +r(768)
+                margin: 15px auto
+            h4
+                color: $lightBlue
+                font-weight: bold
+                line-height: 1.4
+            p
+                display: none
+                +r(768)
+                    display: block
+            &_circle
+                height: 278px
+                width: 278px
+                border: 1px solid #d9dde9
+                border-radius: 100%
+                position: relative
+                +r(899)
+                    height: 248px
+                    width: 248px
+                p
+                    color: $cardBackground
+                    font-size: 50px
+                    text-transform: uppercase
+                    font-weight: bold
+                    display: block
+                    +r(899)
+                        font-size: 45px
+                img.circleForEllipse
+                    display: none
+            &_convenient
+                position: absolute
+                top: 0
+                width: 100%
+                cursor: pointer
+                img.circleForEllipse
+                    display: none
+                &:hover
+                    p.convenient
+                        display: block
+                    img.circleForEllipse
+                        display: block
+                        position: absolute
+                        top: 58%
+                        right: -28px
+                        z-index: 2
+                        +r(899)
+                            right: -24px
+                        +r(768)
+                            display: none
+            &_long
+                position: absolute
+                bottom: 0
+                width: 100%
+                cursor: pointer
+                img.circleForEllipse
+                    display: none
+                &:hover
+                    p.long
+                        display: block
+                        margin-bottom: 30px
+                    img.circleForEllipse
+                        display: block
+                        position: absolute
+                        bottom: 58%
+                        right: -26px
+                        z-index: 2
+                        +r(899)
+                            bottom: 72%
+                            right: -26px
+                        +r(768)
+                            display: none
+            &_reputation
+                position: absolute
+                top: 0
+                width: 100%
+                cursor: pointer
+                img.circleForEllipse
+                    display: none
+                &:hover
+                    p.reputation
+                        display: block
+                    img.circleForEllipse
+                        display: block
+                        position: absolute
+                        top: 58%
+                        left: -23px
+                        z-index: 2
+                        +r(899)
+                            left: -48px
+                        +r(768)
+                            display: none
+            &_transparency
+                position: absolute
+                bottom: 0
+                width: 100%
+                cursor: pointer
+                img.circleForEllipse
+                    display: none
+                &:hover
+                    p.transparency
+                        display: block
+                        margin-bottom: 30px
+                    img.circleForEllipse
+                        display: block
+                        position: absolute
+                        bottom: 58%
+                        left: -21px
+                        z-index: 2
+                        +r(899)
+                            bottom: 72%
+                            left: -52px
+                        +r(768)
+                            display: none
