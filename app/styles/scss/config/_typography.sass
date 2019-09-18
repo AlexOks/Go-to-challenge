@@ -1,0 +1,54 @@
+@include font-face ("SegoeUIBold", fonts/SegoeUI)
+
+
+*
+	font-family: 'SegoeUI', sans-serif
+	line-height: 1
+	font-weight: 400
+	color: $white
+
+h1,h2,h3,h4,h5,h6
+	color: $white
+	margin: 0
+	text-transform: uppercase
+	text-align: center
+	h1,
+	.h1
+		font-size: 35px
+		line-height: 1.2
+		margin-bottom: 1em
+		&:last-child
+			margin-bottom: 0
+
+	h2, .h2
+		font-size: 35px
+		line-height: 1.2
+		margin-bottom: 1em
+
+
+
+	h3, .h3
+		font-size: 19px
+		line-height: 1.2
+		margin-bottom: 1em
+		&:last-child
+			margin-bottom: 0
+
+
+p,
+span
+	margin: 0
+	font-size: 14px
+	line-height: 1.6
+	font-weight: 400
+	+r(999)
+		line-height: 1.45
+
+
+a
+	text-decoration: none
+	color: inherit
+
+li
+  line-height: 1.2
+  font-weight: normal

@@ -1,0 +1,30 @@
+.s_about
+    padding-top: 45px
+    padding-bottom: 130px
+    +r(999)
+        padding-top: 30px
+        padding-bottom: 80px
+    +r(768)
+        padding-top: 20px
+        padding-bottom: 40px
+    &_wrapper
+        justify-content: space-between
+        +r(999)
+            flex-wrap: wrap
+    &_text
+        padding-top: 12px
+        width: 50%
+        +r(999)
+            width: 100%
+    &_image
+        width: 50%
+        max-width:  410px
+        +r(999)
+            display: block
+            margin: 20px auto
+            width: 100%
+        img
+            +r(999)
+                width: 100%
+        p
+            font-size: 11px

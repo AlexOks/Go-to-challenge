@@ -1,0 +1,104 @@
+.s_header
+  background-color: $darkBlue
+  &_wrapper
+    height: 94px
+    justify-content: space-between
+    align-items: center
+    +r(899)
+      flex-wrap: wrap
+      height: 110px
+
+  &_logo
+    +r(899)
+      width: 30%
+    img
+      +r(899)
+        display: block
+        margin: 0 auto
+  &_slogan
+    p
+      font-size: 30px
+      font-weight: bold
+      +r(1024)
+        font-size: 24px
+      +r(768)
+        font-size: 20px
+      +r(475)
+        font-size: 18px
+    +r(899)
+      width: 70%
+      text-align: center
+  &_menu
+    +r(899)
+      width: 50%
+    +r(475)
+          width: 45%
+    nav
+      ul
+        width: 225px
+        justify-content: space-between
+        +r(899)
+          margin: 0 auto
+        +r(475)
+          width: 100%
+        li
+          font-size: 12px
+          padding-bottom: 5px
+        li.active
+          border-bottom: 1px solid $white
+          a
+            cursor: default
+  &_button
+    +r(899)
+      width: 40%
+    a
+      display: block
+      width: 200px
+      border-radius: 20px
+      border: 1px solid $lightBlue
+      text-align: center
+      font-size: 16px
+      line-height: 40px
+      text-transform: uppercase
+      +r(1024)
+        width: 180px
+        font-size: 14px
+        +r(899)
+          margin: 0 auto
+          width: 160px
+          border-radius: 15px
+          line-height: 30px
+        +r(768)
+          width: 140px
+          font-size: 12px
+        +r(475)
+          width: 120px
+          font-size: 10px
+          border-radius: 13px
+          line-height: 26px
+    a:hover
+      background-color: $lightBlue
+  &_lang_menu
+    +r(899)
+      width: 10%
+    +r(475)
+        width: 15%
+    ul
+      position: relative
+      li
+        font-size: 12px
+        &:first-child
+          &:after
+            content: url(../images/dropdownArrow.png)
+            margin-left: 5px
+        a:first-child
+          cursor: default
+      ul.s_header_lang_menu_dropdown
+        display: none
+        position: absolute
+        li
+          &::after
+            content: none
+      &:hover
+        ul.s_header_lang_menu_dropdown
+          display: block
