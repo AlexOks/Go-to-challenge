@@ -11,15 +11,26 @@
             font-size: 12px
     &_navigation
         margin-top: 22px
-        ul
-            li
-                border-right: 1px solid #3697d1
-                padding-right: 22px
-                a
-                    color: #3697d1
-                    text-decoration: underline
-                    font-size: 10px
-                    line-height: 22px
+        nav
+            +r(999)
+                padding: 10px
+            ul
+                +r(999)
+                    display: block
+                    column-count: 3
+                li
+                    border-right: 1px solid #3697d1
+                    padding-right: 22px
+                    +r(999)
+                        border-right: none
+                        text-align: center
+                    a
+                        color: #3697d1
+                        text-decoration: underline
+                        font-size: 10px
+                        line-height: 22px
+            li:last-child
+                border-right: none
     p.copyrighting
         width: 100%
         max-width: 626px
