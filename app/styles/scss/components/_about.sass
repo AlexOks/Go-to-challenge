@@ -1,10 +1,49 @@
 .s_about
     background-color: #e8f3fa
     padding-top: 82px
+    padding-bottom: 100px
     +r(768)
         padding-top: 35px
+        padding-bottom: 35px
     h2
         margin: 0 auto
         color: #1c8ece
         font-size: 36px
         text-align: center
+    &_items
+        margin-top: 60px
+        +r(768)
+            flex-wrap: wrap
+        &_item
+            width: 33%
+            max-width: 254px
+            +r(768)
+                width: 100%
+                max-width: 400px
+                margin: 15px auto
+            +r(425)
+                max-width: 310px
+
+            img
+                display: block
+                margin: 10px auto
+            h4
+                color: $lightBlue
+            p
+                margin-top: 30px
+                color: $darkBlue
+                font-size: 12px
+                text-align: center
+                span
+                    color: $darkBlue
+                    font-weight: bold
+                    font-size: 12px
+                    text-align: center
+            a
+                margin: 0 auto
+                margin-top: 24px
+                color: #3697d1
+                text-decoration: underline
+                font-weight: bold
+                display: block
+                text-align: center
